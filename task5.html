@@ -1,0 +1,78 @@
+<html>
+ 
+<head><title>SAMPLE TEST</title></head>
+ 
+<script type="text/javascript" src="Desktop/calcAge.js" ></script>
+<script type="text/javascript" src="Desktop/LifetimeSupplyCalc.js" ></script>
+<script type="text/javascript" src="Desktop/geometry.js" ></script>
+<script type="text/javascript" src="Desktop/temprature.js" ></script>
+ 
+ 
+<body bgcolor="yellow">
+ 
+<div id="main" name="main"><br>
+ 
+ 
+<!--Task 1-->
+ <center>
+<h1 style="color:black">SAMPLE TEST</H1>
+ <h3 style="color:red">Task 1</h3>
+ 
+<br />
+
+<p>Birth Year :
+    <input type="text" name="birthYear" id="birthYear"   />
+</p<br/>
+<input type="button"   value="Calculate Age" onClick="caculateAge(document.getElementById('birthYear').value,document.getElementById(d=new Date().getFullYear()).value);" />
+</div>
+<div id="sub" name="sub">
+</center>
+<hr>
+ 
+<!--Task 2-->
+ <center>
+<h3 style="color:blue">Task 2</h3>
+ 
+<p>Age :
+    <input type="text" name="age" id="age"   />
+</p>
+<p>Snacks/Day :
+    <input type="text" name="amount" id="amount"   />
+</p><br />
+<input type="button"  value="Calculate Snacks" onClick="calculateSupply(document.getElementById('age').value,document.getElementById('amount').value);" />
+</div>
+</center>
+<hr>
+ 
+<!-- Task 3-->
+ <center>
+<h3 style="color:green">Task 3</h3>
+ 
+<br />
+<p>Radius of a Circle :
+    <input type="text" name="radius" id="radius" maxlength="4"   />
+</p> <br />
+<input type="button"   value="Calculate Area" onClick="calcArea(document.getElementById('radius').value);" />
+<br /><br />
+<input type="button"  value="Calculate Circumference"   onClick="calcCircumfrence(document.getElementById('radius').value);" />
+ 
+</div>
+</center>
+<hr>
+ 
+ <center>
+<h3 style="color:orange">Task 4</h3>
+<br />
+ 
+<p>Temperature :
+    <input type="text" name="temperature" id="temperature"   />
+</p><br />
+<input type="button" value="Celsius to Fahrenheit" onClick="celsiusToFahrenheit(document.getElementById('temperature').value);" />
+<br /><br />
+<input type="button"   value="Fahrenheit to Celsius " onClick="fahrenheitToCelsius(document.getElementById('temperature').value);" />
+ 
+</div>
+ </center>
+</body>
+ 
+</html>
